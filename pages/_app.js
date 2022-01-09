@@ -8,7 +8,7 @@ import '../styles.css';
 import React from 'react';
 import { DefaultSeo, NextSeo } from 'next-seo';
 
-const title = '✧ witchcraft.computer ✧';
+const title = '✧ luthier.computer ✧';
 const description = 'tech tarot deck';
 
 // Markdown pages use this
@@ -19,18 +19,18 @@ const components = {
         title={title}
         description={description}
         openGraph={{
-          url: 'https://witchcraft.computer',
+          url: 'https://luthier.computer',
           title: title,
           description: description,
           images: [
             {
-              url: 'http://witchcraft.computer/rider-waite/a-m.png',
+              url: 'http://luthier.computer/rider-waite/a-m.png',
               width: 512,
               height: 512,
               alt: title,
             },
           ],
-          site_name: 'witchcraft.computer',
+          site_name: 'luthier.computer',
         }}
       />
       <Layout>
@@ -59,15 +59,15 @@ const App = ({ Component, pageProps }) => {
           title={title}
           description={description}
           openGraph={{
-            url: 'https://witchcraft.computer',
+            url: 'https://luthier.computer',
             title: { title },
             description: { description },
             images: [
               {
-                url: 'https://witchcraft.computer/icon-512.png',
+                url: 'https://luthier.computer/icon-512.png',
                 width: 512,
                 height: 512,
-                alt: 'witchcraft.computer',
+                alt: 'luthier.computer',
               },
             ],
           }}

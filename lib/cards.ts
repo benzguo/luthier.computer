@@ -111,7 +111,7 @@ const allCards: Card[] = [
   },
   {
     id: 'c-7',
-    name: 'Seven of Pixels',
+    name: 'Seven of Cups',
     wiki: 'https://www.biddytarot.com/tarot-card-meanings/minor-arcana/suit-of-cups/seven-of-cups',
   },
   {
