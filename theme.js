@@ -36,6 +36,16 @@ export default {
       },
       fontFamily: 'mono',
     },
+    button_link: {
+      px: 0,
+      py: 2,
+      color: 'text',
+      bg: 'transparent',
+      fontSize: 3,
+      cursor: 'pointer',
+      textDecoration: 'underline',
+      // fontFamily: 'mono',
+    },
   },
   links: {
     link_footer: {

@@ -3,13 +3,13 @@ import Head from 'next/head';
 import theme from '../theme';
 import { MDXProvider } from '@mdx-js/react';
 import Layout from '../components/Layout';
-import PageFooter from '../components/PageFooter';
+import BrandBadge from '../components/BrandBadge';
 import '../styles.css';
 import React from 'react';
 import { DefaultSeo, NextSeo } from 'next-seo';
 
 const title = '✧ luthier.computer ✧';
-const description = 'tech tarot deck';
+const description = 'magical instruments';
 
 // Markdown pages use this
 const components = {
@@ -40,7 +40,7 @@ const components = {
         </Card>
       </Layout>
       <Box mb={3} />
-      <PageFooter />
+      <BrandBadge />
     </div>
   ),
 };

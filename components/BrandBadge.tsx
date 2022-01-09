@@ -1,8 +1,8 @@
 import { Flex, Box, Text, Link, Badge } from 'theme-ui';
 
-const PageFooter = (props) => {
+const BrandBadge = (props) => {
   return (
-    <Box sx={{ textAlign: 'center', mt: 0, mb: 4, px: 2 }}>
+    <Box sx={{ textAlign: 'center', px: 2 }}>
       <Box sx={{ flex: '1 1 auto' }} />
       <Flex sx={{ alignItems: 'center' }}>
         <Box sx={{ flex: '1 1 auto' }} />
@@ -21,4 +21,4 @@ const PageFooter = (props) => {
     </Box>
   );
 };
-export default PageFooter;
+export default BrandBadge;
