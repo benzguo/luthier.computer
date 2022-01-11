@@ -18,8 +18,8 @@ const Index = () => {
   selected = data;
   const title = `✧ luthier.computer`;
   const previewImage = `http://luthier.computer/rider-waite/${selected.id}.png`;
-  const [weSelected, setWeSelected] = useState<Boolean>(true);
-  const [starterSelected, setStarterSelected] = useState<Boolean>(true);
+  const [weSelected, setWeSelected] = useState<Boolean>(false);
+  const [edisonSelected, setEdisonSelected] = useState<Boolean>(true);
 
   return (
     <Layout>
@@ -72,11 +72,9 @@ const Index = () => {
         </Box>
         {weSelected && (
           <Box>
-            <Box sx={{ textAlign: 'center', px: 2 }}>
-              <Link href="https://robertkarpay.bandcamp.com">Robert Karpay</Link> – composer
-            </Box>
-            <Box sx={{ textAlign: 'center', px: 2 }}>
-              <Link href="https://twitter.com/bgdotjpg">Ben Guo</Link> – builder, occasional composer
+            <Box sx={{ textAlign: 'center', px: 2, fontStyle: 'italic' }}>
+              <Link href="https://robertkarpay.bandcamp.com">Robert Karpay</Link> +{' '}
+              <Link href="https://twitter.com/bgdotjpg">Ben Guo</Link>
             </Box>
           </Box>
         )}
@@ -85,7 +83,7 @@ const Index = () => {
             <Button
               variant="button_link"
               onClick={() => {
-                setStarterSelected(!starterSelected);
+                setEdisonSelected(!edisonSelected);
               }}
             >
               The Edison
@@ -93,12 +91,67 @@ const Index = () => {
             is our prototype instrument.
           </Text>
         </Box>
-        {starterSelected && (
-          <Box>
-            <Box sx={{ textAlign: 'center', my: 0, px: 2 }}>WIP</Box>
-          </Box>
+        {edisonSelected && (
+          <Card variant="card_info" sx={{ p: 2, mt: 1 }}>
+            <Box sx={{ textAlign: 'center', my: 0, px: 2, pb: 2, pt: 2, fontStyle: 'bold', fontSize: 4 }}>
+              The Edison v0
+            </Box>
+            <Box sx={{ my: 0, px: 2, pb: 2, fontStyle: 'normal' }}>
+              The Edison is the{' '}
+              <Link href="https://www.arturia.com/products/hybrid-synths/keylab-88-mkii/overview">
+                Arturia KeyLab 88 MkII
+              </Link>{' '}
+              paired with a simple and expressive Ableton plugin chain.{' '}
+              <Link href="https://www.dropbox.com/sh/j1x2p1vijtmvvqn/AACvbs1l81rA74LOGC_KcMlqa?dl=0">
+                Download the Ableton project
+              </Link>{' '}
+              (comes with MIDI from these{' '}
+              <Link href="https://soundcloud.com/luthier_computer/sets/bathtime-improvisations">improvisations</Link> by
+              Rob).
+            </Box>
+            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, pt: 2, fontStyle: 'bold', fontSize: 4 }}>
+              Instruments
+            </Box>
+            <Box sx={{ p: 0, m: 0 }}>
+              <ul>
+                <li>
+                  <Link href="https://www.modartt.com/pianoteq">Modartt Pianoteq 7 Standard</Link>
+                </li>
+                <li>
+                  <Link href="https://www.modartt.com/harpsichord">Modartt Harpsichord Hans Ruckers II</Link>
+                </li>
+                <li>
+                  <Link href="https://www.modartt.com/harp">Modartt Harp Pack</Link>
+                </li>
+                <li>
+                  <Link href="https://www.modartt.com/celeste">Modartt Celeste Pack</Link>
+                </li>
+                <li>
+                  <Link href="https://www.native-instruments.com/en/pricing/una-corda/">
+                    Native Instruments Una Corda
+                  </Link>
+                </li>
+              </ul>
+            </Box>
+            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, fontStyle: 'bold', fontSize: 4 }}>Effects</Box>
+            <Box sx={{ p: 0, m: 0 }}>
+              <ul>
+                <li>
+                  <Link href="https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/">Valhalla Vintage Verb</Link>
+                </li>
+                <li>
+                  <Link href="https://output.com/products/thermal">Output Thermal Distortion</Link>
+                </li>
+                <li>
+                  <Link href="https://output.com/products/portal">Output Portal Granular Delay</Link>
+                </li>
+              </ul>
+            </Box>
+            <Image src="/sliders.jpg" />
+          </Card>
         )}
       </Box>
+      <Box sx={{ textAlign: 'center', pt: 4, pb: 4 }}>✧</Box>
     </Layout>
   );
 };
