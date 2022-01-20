@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import BrandBadge from '../components/BrandBadge';
 import allCards, { cardsById } from '../lib/cards';
-import { Button, Image, Box, Text, Link, Heading, Flex, Card } from 'theme-ui';
+import { Button, Image, Box, Text, Link, Badge, Flex, Card } from 'theme-ui';
 import { GetStaticProps } from 'next';
 import { NextSeo } from 'next-seo';
 
@@ -57,7 +57,7 @@ const Index = () => {
         <Box sx={{ textAlign: 'center', px: 2 }}>
           <Link href="https://soundcloud.com/luthier_computer">soundcloud</Link>
         </Box>
-        <Box sx={{ textAlign: 'center', mt: 2, px: 2 }}>
+        <Box sx={{ textAlign: 'center', mt: 2, px: 2, pb: 2 }}>
           <Text>
             <Button
               variant="button_link"
@@ -65,49 +65,74 @@ const Index = () => {
                 setWeSelected(!weSelected);
               }}
             >
-              We
+              Luthier
             </Button>{' '}
-            make stuff to help you make music.
+            ✧{' '}
+            <Text>
+              <Button
+                variant="button_link"
+                onClick={() => {
+                  setEdisonSelected(!edisonSelected);
+                }}
+              >
+                The Edison
+              </Button>{' '}
+            </Text>
           </Text>
         </Box>
         {weSelected && (
-          <Box>
-            <Box sx={{ textAlign: 'center', px: 2, fontStyle: 'italic' }}>
-              <Link href="https://robertkarpay.bandcamp.com">Robert Karpay</Link> +{' '}
-              <Link href="https://twitter.com/bgdotjpg">Ben Guo</Link>
-            </Box>
+          <Box sx={{ fontStyle: 'italic', textAlign: 'center', mb: 2 }}>
+            The craft of luthiers, lutherie (rarely called "luthiery"), is commonly divided into the two main categories
+            of makers of stringed instruments that are plucked or strummed and makers of stringed instruments that are
+            bowed.
           </Box>
         )}
-        <Box sx={{ textAlign: 'center', px: 2 }}>
-          <Text>
-            <Button
-              variant="button_link"
-              onClick={() => {
-                setEdisonSelected(!edisonSelected);
-              }}
-            >
-              The Edison
-            </Button>{' '}
-            is our prototype instrument.
-          </Text>
-        </Box>
         {edisonSelected && (
           <Card variant="card_info" sx={{ p: 2, mt: 1 }}>
             <Box sx={{ textAlign: 'center', my: 0, px: 2, pb: 2, pt: 2, fontStyle: 'bold', fontSize: 4 }}>
-              The Edison v0
+              The Edison
             </Box>
-            <Box sx={{ my: 0, px: 2, pb: 2, fontStyle: 'normal' }}>
-              The Edison is the{' '}
-              <Link href="https://www.arturia.com/products/hybrid-synths/keylab-88-mkii/overview">
-                Arturia KeyLab 88 MkII
-              </Link>{' '}
-              paired with a simple and expressive Ableton plugin chain.{' '}
-              <Link href="https://www.dropbox.com/sh/j1x2p1vijtmvvqn/AACvbs1l81rA74LOGC_KcMlqa?dl=0">
-                Download the Ableton project
-              </Link>{' '}
-              (comes with MIDI from these{' '}
-              <Link href="https://soundcloud.com/luthier_computer/sets/bathtime-improvisations">improvisations</Link> by
-              Rob).
+            <Box sx={{ my: 0, px: 2, pb: 3, fontStyle: 'normal' }}>
+              ✧ the Edison is an exploratorium for music ✧ it's kind of like a synthesizer, but simpler ✧ it's an
+              Ableton project with an ideal set of instruments, effects, and parameters for the intuitive exploration of
+              soundscapes ✧ it's a vehicle from the MIDIverse ✧
+            </Box>
+            <Box sx={{ textAlign: 'center' }}>
+              <Link href="https://www.dropbox.com/sh/rerfiwbgzepyhgl/AACib5zfRvXD6v88jhyg8D5wa?dl=0">
+                <Button variant="button">Download the Ableton project</Button>
+              </Link>
+            </Box>
+            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, pt: 3, fontStyle: 'bold', fontSize: 4 }}>Hardware</Box>
+            <Box sx={{ p: 0, m: 0 }}>
+              <ul>
+                <li>
+                  <Link href="https://www.arturia.com/products/hybrid-synths/keylab-88-mkii/overview">
+                    Arturia Keylab 88 MkII
+                  </Link>
+                </li>
+                <li>
+                  Audio interface (recommended:{' '}
+                  <Link href="https://www.solidstatelogic.com/products/ssl2-plus">SSL2+</Link>)
+                </li>
+                <li>
+                  Speakers (recommended: <Link href="https://www.ikmultimedia.com/products/iloudmtm/">iLoud MTM</Link>)
+                </li>
+                <li>
+                  Expression pedal (recommended: <Link href="https://www.amazon.com/dp/B000NLRWEI">M-Audio</Link>)
+                </li>
+                <li>
+                  Sustain pedal (recommended: <Link href="https://www.amazon.com/dp/B07RXRRH93">Donner</Link>)
+                </li>
+                <li>
+                  Speaker stands (recommended: <Link href="https://output.com/products/stands">Output</Link>)
+                </li>
+                <li>
+                  Piano bench (recommended: <Link href="https://www.amazon.com/dp/B08VL1JC2T">Roland</Link>)
+                </li>
+                <li>Cables</li>
+                <li>Computer</li>
+                <li>Post-it notes</li>
+              </ul>
             </Box>
             <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, pt: 2, fontStyle: 'bold', fontSize: 4 }}>
               Instruments
