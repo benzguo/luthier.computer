@@ -87,6 +87,17 @@ const Index = () => {
             bowed.
           </Box>
         )}
+        <Box sx={{ fontStyle: 'italic', justifyContent: 'center', mb: 2 }}>
+          <iframe
+            width="490"
+            height="315"
+            src="https://www.youtube.com/embed/E0ZevWqifrU"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Box>
         {edisonSelected && (
           <Card variant="card_info" sx={{ p: 2, mt: 1 }}>
             <Box sx={{ textAlign: 'center', my: 0, px: 2, pb: 2, pt: 2, fontStyle: 'bold', fontSize: 4 }}>
@@ -102,6 +113,7 @@ const Index = () => {
                 <Button variant="button">Download the Ableton project</Button>
               </Link>
             </Box>
+
             <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, pt: 3, fontStyle: 'bold', fontSize: 4 }}>Hardware</Box>
             <Box sx={{ p: 0, m: 0 }}>
               <ul>
