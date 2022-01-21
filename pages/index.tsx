@@ -172,7 +172,7 @@ const Index = () => {
                 </li>
               </ul>
             </Box>
-            <Image src="/sliders.jpg" />
+            <Image src="/diagram.png" />
           </Card>
         )}
       </Box>
