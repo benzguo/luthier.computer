@@ -94,8 +94,8 @@ const Index = () => {
             </Box>
             <Box sx={{ my: 0, px: 2, pb: 3, fontStyle: 'normal' }}>
               ✧ the Edison is an exploratorium for music ✧ it's kind of like a synthesizer, but simpler ✧ it's an
-              Ableton project with an ideal set of instruments, effects, and parameters for the intuitive exploration of
-              soundscapes ✧ it's a vehicle from the MIDIverse ✧
+              Ableton project with an ideal set of instruments, effects, and parameters for exploring ✧ it's a vehicle
+              from the MIDIverse ✧
             </Box>
             <Box sx={{ textAlign: 'center' }}>
               <Link href="https://www.dropbox.com/sh/rerfiwbgzepyhgl/AACib5zfRvXD6v88jhyg8D5wa?dl=0">
