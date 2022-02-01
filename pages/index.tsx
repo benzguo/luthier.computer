@@ -71,7 +71,9 @@ const Index = () => {
           <Card variant="card_info" sx={{ p: 2, mt: 1, maxWidth: 400, pl: 3 }}>
             <Box sx={{ textAlign: 'center' }}>
               <Link href="https://www.dropbox.com/sh/87skwu7r2rw0qkb/AABRFypOMV-jxr01T-H3MZXaa?dl=0">
-                <Button variant="button">Download the Edison Lite</Button>
+                <Button variant="button" sx={{ backgroundColor: '#C0FBFD' }}>
+                  Download the Edison Lite
+                </Button>
               </Link>
             </Box>
             <Box sx={{ textAlign: 'center' }}>
@@ -115,9 +117,11 @@ const Index = () => {
                 <li>Post-it notes</li>
               </ul>
             </Box>
-            <Box sx={{ textAlign: 'center', mt: 5 }}>
+            <Box sx={{ textAlign: 'center', mt: 7 }}>
               <Link href="https://www.dropbox.com/sh/rerfiwbgzepyhgl/AACib5zfRvXD6v88jhyg8D5wa?dl=0">
-                <Button variant="button">Download the Edison Suite</Button>
+                <Button variant="button" sx={{ backgroundColor: '#F3C0FD' }}>
+                  Download the Edison Suite
+                </Button>
               </Link>
             </Box>
             <Box sx={{ textAlign: 'center' }}>
