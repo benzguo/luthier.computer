@@ -54,67 +54,37 @@ const Index = () => {
           </Flex>
         </Flex>
         <BrandBadge />
-        <Box sx={{ textAlign: 'center', px: 2 }}>
+        <Box sx={{ textAlign: 'center', px: 2, mb: 4 }}>
           <Link href="https://soundcloud.com/luthier_computer">soundcloud</Link>
+          {' ✧ '}
+          <Link href="https://luthiercomputer.substack.com">substack</Link>
         </Box>
-        <Box sx={{ textAlign: 'center', mt: 2, px: 2, pb: 2 }}>
-          <Text>
-            <Button
-              variant="button_link"
-              onClick={() => {
-                setWeSelected(!weSelected);
-              }}
-            >
-              Luthier
-            </Button>{' '}
-            ✧{' '}
-            <Text>
-              <Button
-                variant="button_link"
-                onClick={() => {
-                  setEdisonSelected(!edisonSelected);
-                }}
-              >
-                The Edison
-              </Button>{' '}
-            </Text>
-          </Text>
-        </Box>
-        {weSelected && (
-          <Box sx={{ fontStyle: 'italic', textAlign: 'center', mb: 2 }}>
-            The craft of luthiers, lutherie (rarely called "luthiery"), is commonly divided into the two main categories
-            of makers of stringed instruments that are plucked or strummed and makers of stringed instruments that are
-            bowed.
-          </Box>
-        )}
         <Box sx={{ fontStyle: 'italic', justifyContent: 'center', mb: 2 }}>
           <iframe
-            width="490"
-            height="315"
-            src="https://www.youtube.com/embed/E0ZevWqifrU"
-            title="YouTube video player"
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSDwbwueKAbyogIrVNStXjqJcTvAsIZn-45hVgLOsoxYsVav_Rdm2Y-lQsduTSC4gDqdqfU9DP265-P/embed?start=true&loop=true&delayms=5000"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            width="960"
+            height="569"
           ></iframe>
         </Box>
-        {edisonSelected && (
-          <Card variant="card_info" sx={{ p: 2, mt: 1 }}>
-            <Box sx={{ textAlign: 'center', my: 0, px: 2, pb: 2, pt: 2, fontStyle: 'bold', fontSize: 4 }}>
-              The Edison
-            </Box>
-            <Box sx={{ my: 0, px: 2, pb: 3, fontStyle: 'normal' }}>
-              ✧ the Edison is an exploratorium for music ✧ it's kind of like a synthesizer, but simpler ✧ it's an
-              Ableton project with an ideal set of instruments, effects, and parameters for exploring ✧ it's a vehicle
-              from the MIDIverse ✧
-            </Box>
+        <Flex>
+          <Card variant="card_info" sx={{ p: 2, mt: 1, maxWidth: 400, pl: 3 }}>
             <Box sx={{ textAlign: 'center' }}>
-              <Link href="https://www.dropbox.com/sh/rerfiwbgzepyhgl/AACib5zfRvXD6v88jhyg8D5wa?dl=0">
-                <Button variant="button">Download the Ableton project</Button>
+              <Link href="https://www.dropbox.com/sh/87skwu7r2rw0qkb/AABRFypOMV-jxr01T-H3MZXaa?dl=0">
+                <Button variant="button">Download the Edison Lite</Button>
               </Link>
             </Box>
+            <Box sx={{ textAlign: 'center' }}>
+              <Text>
+                for <Link href="https://www.ableton.com/en/products/live-lite/">Ableton Live 11 Lite</Link>, free with
+                the Arturia
+              </Text>
+            </Box>
+            <Box sx={{ textAlign: 'center', fontStyle: 'italic' }}>
+              <Text>No additional plugins required</Text>
+            </Box>
 
-            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, pt: 3, fontStyle: 'bold', fontSize: 4 }}>Hardware</Box>
+            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, pt: 3, fontStyle: 'bold', fontSize: 5 }}>Hardware</Box>
             <Box sx={{ p: 0, m: 0 }}>
               <ul>
                 <li>
@@ -123,54 +93,60 @@ const Index = () => {
                   </Link>
                 </li>
                 <li>
-                  Audio interface (recommended:{' '}
-                  <Link href="https://www.solidstatelogic.com/products/ssl2-plus">SSL2+</Link>)
+                  Audio interface (rec: <Link href="https://www.solidstatelogic.com/products/ssl2-plus">SSL2+</Link>)
                 </li>
                 <li>
-                  Speakers (recommended: <Link href="https://www.ikmultimedia.com/products/iloudmtm/">iLoud MTM</Link>)
+                  Speakers (rec: <Link href="https://www.ikmultimedia.com/products/iloudmtm/">iLoud MTM</Link>)
                 </li>
                 <li>
-                  Expression pedal (recommended: <Link href="https://www.amazon.com/dp/B000NLRWEI">M-Audio</Link>)
+                  Expression pedal (rec: <Link href="https://www.amazon.com/dp/B000NLRWEI">M-Audio</Link>)
                 </li>
                 <li>
-                  Sustain pedal (recommended: <Link href="https://www.amazon.com/dp/B07RXRRH93">Donner</Link>)
+                  Sustain pedal (rec: <Link href="https://www.amazon.com/dp/B07RXRRH93">Donner</Link>)
                 </li>
                 <li>
-                  Speaker stands (recommended: <Link href="https://output.com/products/stands">Output</Link>)
+                  Speaker stands (rec: <Link href="https://output.com/products/stands">Output</Link>)
                 </li>
                 <li>
-                  Piano bench (recommended: <Link href="https://www.amazon.com/dp/B08VL1JC2T">Roland</Link>)
+                  Piano bench (rec: <Link href="https://www.amazon.com/dp/B08VL1JC2T">Roland</Link>)
                 </li>
                 <li>Cables</li>
                 <li>Computer</li>
                 <li>Post-it notes</li>
               </ul>
             </Box>
-            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, pt: 2, fontStyle: 'bold', fontSize: 4 }}>
-              Instruments
+            <Box sx={{ textAlign: 'center', mt: 5 }}>
+              <Link href="https://www.dropbox.com/sh/rerfiwbgzepyhgl/AACib5zfRvXD6v88jhyg8D5wa?dl=0">
+                <Button variant="button">Download the Edison Suite</Button>
+              </Link>
+            </Box>
+            <Box sx={{ textAlign: 'center' }}>
+              for <Link href="https://www.ableton.com/en/live/compare-editions/">Ableton Live 11 Suite</Link>
+            </Box>
+            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, fontStyle: 'italic', fontSize: 3 }}>
+              Requires the plugins below:
             </Box>
             <Box sx={{ p: 0, m: 0 }}>
               <ul>
                 <li>
                   <Link href="https://www.modartt.com/pianoteq">Modartt Pianoteq 7 Standard</Link>
                 </li>
-                <li>
-                  <Link href="https://www.modartt.com/harpsichord">Modartt Harpsichord Hans Ruckers II</Link>
-                </li>
-                <li>
-                  <Link href="https://www.modartt.com/harp">Modartt Harp Pack</Link>
-                </li>
-                <li>
-                  <Link href="https://www.modartt.com/celeste">Modartt Celeste Pack</Link>
-                </li>
-                <li>
-                  <Link href="https://www.native-instruments.com/en/pricing/una-corda/">
-                    Native Instruments Una Corda
-                  </Link>
-                </li>
+                <ul>
+                  <li>
+                    <Link href="https://www.modartt.com/steingraeber">Steingraeber E-272</Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.modartt.com/harpsichord">Harpsichord Hans Ruckers II</Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.modartt.com/harp">Harp Pack</Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.modartt.com/celeste">Celeste Pack</Link>
+                  </li>
+                </ul>
               </ul>
             </Box>
-            <Box sx={{ textAlign: 'center', my: 0, py: 0, px: 2, fontStyle: 'bold', fontSize: 4 }}>Effects</Box>
             <Box sx={{ p: 0, m: 0 }}>
               <ul>
                 <li>
@@ -184,10 +160,22 @@ const Index = () => {
                 </li>
               </ul>
             </Box>
-            <Image src="/diagram.png" />
           </Card>
-        )}
+          <Card variant="card_info" sx={{ p: 2, mt: 1, maxWidth: 600, pl: 3 }}>
+            <Image src="/full.jpg" />
+            <Image src="/diagram-lite.png" />
+            <Image src="/closeup.jpg" />
+            <Image src="/diagram-suite.png" />
+          </Card>
+        </Flex>
       </Box>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vTLfUcyMCcCJp0TGy8ueBZIP0hTQal5LgFFaxvw-UuIeHkakdCIPC0H2cRsa--6qUDfRbEvuW6rTlHz/embed?start=false&loop=false&delayms=3000"
+        frameBorder="0"
+        width="960"
+        height="569"
+      ></iframe>
+
       <Box sx={{ textAlign: 'center', pt: 4, pb: 4 }}>✧</Box>
     </Layout>
   );
