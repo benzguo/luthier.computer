@@ -61,7 +61,7 @@ const Index = () => {
         </Box>
         <Box sx={{ fontStyle: 'italic', justifyContent: 'center', mb: 2 }}>
           <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vSDwbwueKAbyogIrVNStXjqJcTvAsIZn-45hVgLOsoxYsVav_Rdm2Y-lQsduTSC4gDqdqfU9DP265-P/embed?start=true&loop=true&delayms=5000"
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSDwbwueKAbyogIrVNStXjqJcTvAsIZn-45hVgLOsoxYsVav_Rdm2Y-lQsduTSC4gDqdqfU9DP265-P/embed?start=true&loop=true&delayms=3000"
             frameBorder="0"
             width="960"
             height="569"
