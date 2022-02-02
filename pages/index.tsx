@@ -101,6 +101,9 @@ const Index = () => {
                   Speakers (rec: <Link href="https://www.ikmultimedia.com/products/iloudmtm/">iLoud MTM</Link>)
                 </li>
                 <li>
+                  2x 1/4-in cables (<Link href="https://www.amazon.com/dp/B073RN2VTV">Cable Matters</Link>)
+                </li>
+                <li>
                   Expression pedal (rec: <Link href="https://www.amazon.com/dp/B000NLRWEI">M-Audio</Link>)
                 </li>
                 <li>
@@ -112,7 +115,6 @@ const Index = () => {
                 <li>
                   Piano bench (rec: <Link href="https://www.amazon.com/dp/B08VL1JC2T">Roland</Link>)
                 </li>
-                <li>Cables</li>
                 <li>Computer</li>
                 <li>Post-it notes</li>
               </ul>
