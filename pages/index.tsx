@@ -57,7 +57,7 @@ const Index = () => {
         <Box sx={{ textAlign: 'center', px: 2, mb: 4 }}>
           <Link href="https://soundcloud.com/luthier_computer">soundcloud</Link>
           {' ✧ '}
-          <Link href="https://luthiercomputer.substack.com">substack</Link>
+          <Link href="https://luthiercomputer.substack.com">newsletter</Link>
         </Box>
         <Box sx={{ fontStyle: 'italic', justifyContent: 'center', mb: 2 }}>
           <iframe
