@@ -61,7 +61,7 @@ const Index = () => {
         </Box>
         <Box sx={{ fontStyle: 'italic', justifyContent: 'center', mb: 2 }}>
           <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vSDwbwueKAbyogIrVNStXjqJcTvAsIZn-45hVgLOsoxYsVav_Rdm2Y-lQsduTSC4gDqdqfU9DP265-P/embed?start=true&loop=true&delayms=3000"
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSDwbwueKAbyogIrVNStXjqJcTvAsIZn-45hVgLOsoxYsVav_Rdm2Y-lQsduTSC4gDqdqfU9DP265-P/embed?start=true&loop=true&delayms=5000"
             frameBorder="0"
             width="960"
             height="569"
@@ -174,7 +174,7 @@ const Index = () => {
         </Flex>
       </Box>
       <iframe
-        src="https://docs.google.com/presentation/d/e/2PACX-1vTLfUcyMCcCJp0TGy8ueBZIP0hTQal5LgFFaxvw-UuIeHkakdCIPC0H2cRsa--6qUDfRbEvuW6rTlHz/embed?start=false&loop=false&delayms=3000"
+        src="https://docs.google.com/presentation/d/e/2PACX-1vTLfUcyMCcCJp0TGy8ueBZIP0hTQal5LgFFaxvw-UuIeHkakdCIPC0H2cRsa--6qUDfRbEvuW6rTlHz/embed?start=false&loop=false&delayms=5000"
         frameBorder="0"
         width="960"
         height="569"
