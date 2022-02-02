@@ -67,6 +67,20 @@ const Index = () => {
             height="569"
           ></iframe>
         </Box>
+        <Box sx={{ fontStyle: 'italic', justifyContent: 'center', mb: 2 }}>
+          <Text>
+            This was improvised live on the Edison Suite by{' '}
+            <Link href="https://robertkarpay.bandcamp.com">Robert Karpay</Link>
+          </Text>
+          <iframe
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1194314848&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
+          ></iframe>
+        </Box>
         <Flex>
           <Card variant="card_info" sx={{ p: 2, mt: 1, maxWidth: 400, pl: 3 }}>
             <Box sx={{ textAlign: 'center' }}>
